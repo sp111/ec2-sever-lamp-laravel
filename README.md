@@ -7,32 +7,39 @@ Navigate to EC2 service
 Click on “Launch Instance”. This will launch a setup wizard. Set configurations according to your requirements and launch instance. 
 It will ask to generate a key pair, which will be useful SSH connection to server.
 Then login to ssh terminal using that key
+	
 	ssh -i {key file location } ubuntu@{server public address} (Linux/Mac)
 
-	Note: before connecting to ssh, set your keyfile permission to 400.
- sudo chmod -R 400 { key file location } 
+Note: before connecting to ssh, set your keyfile permission to 400.
+ 
+ 	sudo chmod -R 400 { key file location } 
  
 Setup LAMP for laravel project
+
 Follow this link for setup
 	https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
 
 Install required php packages
 	Laravel requires mbstring and php-xml package
-	sudo apt-get install php-mbstring
-sudo apt-get install php-xml
-sudo apt install zip unzip php7.0-zip
+	
+		sudo apt-get install php-mbstring
+		sudo apt-get install php-xml
+		sudo apt install zip unzip php7.0-zip
 
 Install composer
-	sudo apt install composer
+		
+		sudo apt install composer
 
 Copy your project to apache root directory via ftp or do a git clone of your project. Navigate to your project. And run composer install.
+
 	cd {your project path}
 	sudo composer install
 	
 Set permissions for laravel publically accessible folders.
-sudo chmod -R 770 public
-sudo chmod -R 770 bootstrap/cache
-sudo chmod -R 770 storage
+
+	sudo chmod -R 770 public
+	sudo chmod -R 770 bootstrap/cache
+	sudo chmod -R 770 storage
 
 Set root in apache config
 Open your apache config file in folder /etc/apache2/sites-available. You can use default config file or create new. Following is example apache config file.
