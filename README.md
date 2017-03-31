@@ -20,11 +20,12 @@ Follow this link for setup
 	https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
 
 Install required php packages
-	Laravel requires mbstring and php-xml package
-	
-		sudo apt-get install php-mbstring
-		sudo apt-get install php-xml
-		sudo apt install zip unzip php7.0-zip
+
+Laravel requires mbstring and php-xml package
+
+	sudo apt-get install php-mbstring
+	sudo apt-get install php-xml
+	sudo apt install zip unzip php7.0-zip
 
 Install composer
 		
