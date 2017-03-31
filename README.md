@@ -7,9 +7,9 @@ Navigate to EC2 service
 Click on “Launch Instance”. This will launch a setup wizard. Set configurations according to your requirements and launch instance. 
 It will ask to generate a key pair, which will be useful SSH connection to server.
 Then login to ssh terminal using that key
-ssh -i {key file location } ubuntu@{server public address} (Linux/Mac)
+	ssh -i {key file location } ubuntu@{server public address} (Linux/Mac)
 
-		Note: before connecting to ssh, set your keyfile permission to 400.
+	Note: before connecting to ssh, set your keyfile permission to 400.
  sudo chmod -R 400 { key file location } 
  
 Setup LAMP for laravel project
