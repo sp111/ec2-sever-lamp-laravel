@@ -1,11 +1,12 @@
 # ec2-sever-lamp-laravel
-Steps for EC2 server setup with LAMP stack and laravel
+Steps for server setup with LAMP stack and laravel
 
-Setup instance:
+Setup EC2 instance:
 Login to aws console
 Navigate to EC2 service
 Click on “Launch Instance”. This will launch a setup wizard. Set configurations according to your requirements and launch instance. 
 It will ask to generate a key pair, which will be useful SSH connection to server.
+( You can skip EC2 instance setup, if you are not woking with aws EC2 instance)
 Then login to ssh terminal using that key
 	
 	ssh -i {key file location } ubuntu@{server public address} (Linux/Mac)
